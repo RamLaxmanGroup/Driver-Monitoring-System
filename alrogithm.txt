@@ -1,0 +1,14 @@
+Alogirthm for android implementation.
+
+1) Start.
+2) Get driver id input.
+3) Use facenet model to validate the driver for the first time.
+	3.1) If validated,
+		start adding time to respective driver id .
+		driver detection ( classes: Head drop, Safe, Swing, Yawning, Calling, Eyes closed).
+		check: if time period = 15 minutes is completed then revalidate the driver with same id.
+		If validated go to (3.1)
+		Otherwise generate alert and try for three more times
+		
+	3.2) Otherwise do some alerting (id not matched types..)
+

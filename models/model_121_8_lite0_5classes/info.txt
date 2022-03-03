@@ -1,0 +1,4 @@
+optimizer = tf.keras.optimizers.Adam(
+      learning_rate=learning_rate_fn, epsilon=0.001)
+
+earlystop_callback = tf.keras.callbacks.EarlyStopping(monitor='val_loss', patience=100, restore_best_weights=True)
